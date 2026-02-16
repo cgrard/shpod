@@ -131,7 +131,7 @@ RUN helper-curl tar kubeseal \
 
 # https://github.com/kubernetes-sigs/kustomize/releases
 FROM builder AS kustomize
-ARG KUSTOMIZE_VERSION=5.7.1
+ARG KUSTOMIZE_VERSION=5.8.1
 RUN helper-curl tar kustomize \
     https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v$KUSTOMIZE_VERSION/kustomize_v${KUSTOMIZE_VERSION}_linux_@GOARCH.tar.gz
 
